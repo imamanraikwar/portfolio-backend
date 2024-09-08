@@ -18,7 +18,7 @@ dotenv.config({ path: "/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.PORTFOLIO_URL, process.env.CORS_ORIGIN],
+    origin: [process.env.PORTFOLIO_URL, process.env.CORS_ORIGIN,"http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
